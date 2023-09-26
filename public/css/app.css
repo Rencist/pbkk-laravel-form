@@ -1,0 +1,257 @@
+.bg-green {
+  background-color: #014d36 !important;
+}
+.font-green {
+  color: #014d36 !important;
+}
+.bg-yellow {
+  background-color: #ffc443 !important;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0.5;
+  background-color: white;
+}
+.img-responsive1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -25px; /* This needs to be half of the height */
+  margin-left: -25px;
+}
+
+.side-logo {
+  width: 36px !important;
+}
+.side-active {
+  background-color: #ffc443 !important;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.border-gray {
+  border: 1px solid #a6a0a0;
+}
+.bg-gray {
+  background-color: #a6a0a0;
+}
+.btn-secondary {
+  background-color: #979797 !important;
+  border-color: #979797 !important;
+}
+.btn-secondary:hover {
+  background-color: #b5b4b4 !important;
+  border-color: #b5b4b4 !important;
+}
+.btn-green {
+  background-color: #014d36 !important;
+  border-color: #025a3f !important;
+}
+.btn-green:hover {
+  background-color: #014d36 !important;
+  border-color: #025a3f !important;
+}
+
+.row .col div.item-detail {
+  margin-bottom: 2rem !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Warna kuning sidebar */
+body div.main-menu.menu-light ul.navigation > li.active > a {
+  background: #ffc443 !important;
+}
+
+/* Warna kuning sidebar .has-sub */
+/* Option 1 - child nya yang berwarna */
+/* body
+  div.main-menu.menu-light
+  ul.navigation
+  > li.open
+  > ul.menu-content
+  > li.active
+  > a {
+  background: #ffc443 !important;
+} */
+/* Option 2 - parent nya yang berwarna */
+body
+  div.main-menu.menu-light
+  ul.navigation
+  > li.open:has(> ul.menu-content > li.active)
+  > a {
+  background: #ffc443 !important;
+}
+
+/* Warna ijo di kanan sidebar open */
+body div.main-menu.menu-light .navigation > li.open > a {
+  border-right: 4px solid #014d36 !important;
+}
+
+/* Logo chevron yang gagal load */
+body.menu-expanded
+  div.main-menu.menu-light
+  ul.navigation
+  > li.has-sub
+  > a::after {
+  content: "\276F" !important;
+  color: #014d36;
+  /* rotate: -90deg; */
+}
+body.menu-collapsed
+  div.main-menu.menu-light
+  ul.navigation
+  > li.has-sub
+  > a::after {
+  content: none !important;
+}
+
+/* Popup Image Fullpage */
+.popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 3px;
+  width: 750px;
+  object-fit: cover;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Change default border color */
+.card.border {
+  border: 1px solid #a8a8a8 !important;
+}
+.card-header.border-bottom {
+  border-bottom: 1px solid #a8a8a8 !important;
+}
+
+/* Bage tanggal color */
+.badge.badge-light {
+  background-color: #014d36 !important;
+  color: #fff !important;
+}
+
+/* Hover cancel button */
+.btn.bg-gray {
+  background-color: #a6a0a0 !important;
+  border-color: #a6a0a0 !important;
+}
+.btn.bg-gray:hover {
+  background-color: #b5b4b4 !important;
+  border-color: #b5b4b4 !important;
+}
+
+/* Glitch modal bootstrap */
+.modal-open {
+  padding-right: 0px !important;
+}
+
+/* btn action master */
+.btn.btn-action {
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: 0.2rem !important;
+}
+
+.btn.btn-action img {
+  width: 80% !important;
+  height: auto !important;
+}
+
+/* Hover card-counter */
+div#card-counter:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Notificaton */
+.top-head-dropdown .dropdown-menu {
+  width: 400px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+a.top-text-block {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: inherit !important;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+}
+
+a.top-text-block:hover::before {
+  content: "";
+  width: 4px !important;
+  background: #ffc443;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.top-text-block .top-text-light {
+  color: #999;
+  font-size: 0.9em;
+}
+.top-text-block .top-text-heading {
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.top-text-light i.icon-right {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+span#notif-number {
+  font-size: 0.5em;
+  margin-top: 0.8em;
+  content: "";
+}
+
+/* Input checkbox */
+input[type="checkbox"] {
+  opacity: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}

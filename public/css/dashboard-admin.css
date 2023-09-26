@@ -1,0 +1,28 @@
+body {
+  font-family: 'Inter';
+  background: #d0cdcd;
+}
+.shadow-s {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.35);
+}
+.gradient-green {
+  background: linear-gradient(80deg, #effafd, #00b981);
+}
+.gradient-blue {
+  background: linear-gradient(80deg, #effafd, #0098b9);
+}
+.gradient-orange {
+  background: linear-gradient(80deg, #effafd, #ff993a);
+}
+.gradient-red {
+  background: linear-gradient(80deg, #effafd, #f95a9d);
+}
+.table-spacing {
+  border-spacing: 5px;
+}
+.hiddenRow {
+  padding: 0 !important;
+}
+.bg-innertable {
+  background: #f2f2f2;
+}
